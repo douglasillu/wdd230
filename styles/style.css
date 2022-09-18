@@ -7,13 +7,15 @@ body {
     line-height: 32px;
     font-family: sans-serif;
     color: blue;
+    box-shadow: 15px;
 }
 
 h1 {
-    font-size:2.8rem; 
+    font-size:4.8rem; 
     color: white;
 	text-align: center;
-	margin-top: 50px;
+	margin-top: 150px;
+ 
 }
 
 h2 {
@@ -22,6 +24,14 @@ h2 {
 	color: purple;
     border-bottom: 1px solid #bbb;
 }
+
+h3 {
+    font-size:0.95rem;
+    text-align: left;
+	color: rgb(97, 96, 97);
+    border-top: 1px solid #bbb;
+}
+
 li {
 	 font-size:1.15rem;
 	 color: green;
@@ -44,9 +54,17 @@ header, footer, footer a {
 header img {
     width: 195px;
     height: 325px;
-  	margin-right: 120px;
+  	margin-left: 40px;
+    margin-top: -180px;
 }
 
 footer {
     font-size: medium;
 }
+
+@media screen and (max-width: 900px) {
+    h1 {
+             
+        flex-direction: column;
+    
+    }
