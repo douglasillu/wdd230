@@ -1,68 +1,91 @@
 /* WDD 230 - Assignment Portal CSS Template */
 
-* { margin: 0; box-sizing: border-box; } 
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
 
-body { 
-    font-size: 16px; 
-    line-height: 32px;
-    font-family: sans-serif;
-    color: blue;
- }
+body {
+  font-size: 16px;
+  line-height: 32px;
+  font-family: sans-serif;
+  color: rgb(17, 17, 87);
+  margin: 30px;
+}
 
 h1 {
-    font-size:4.8rem; 
-    color: white;
-	text-align: center;
-	margin-top: 150px;
- 
+  font-size: 4.8rem;
+  color: white;
+  text-align: center;
+  margin-top: 150px;
 }
 
 h2 {
-    font-size:1.5rem;
-    text-align: left;
-	color: purple;
-    border-bottom: 1px solid #bbb;
+  font-size: 1.5rem;
+  color: purple;
+  border-bottom: 1px solid #bbb;
 }
 
 h3 {
-    font-size:0.95rem;
-    text-align: left;
-	color: rgb(97, 96, 97);
-    border-top: 1px solid #bbb;
+  font-size: 0.95rem;
+  text-align: left;
+  color: rgb(97, 96, 97);
+  border-top: 1px solid #bbb;
 }
 
 li {
-	 font-size:1.15rem;
-	 color: green;
-    text-align: left;
-}
-	
-
-header, main, footer {
-    margin: 1.25rem auto;
-    padding: .5rem;
-   
+  font-size: 1.15rem;
+  color: green;
+  text-align: left;
 }
 
-header, footer, footer a {
-   
-    background-color: blue;
-    color: whitesmoke;
+header,
+main,
+footer {
+  margin: 1.25rem auto;
+  padding: 0.5rem;
+}
+
+header,
+footer,
+footer a {
+  background-color: rgb(10, 10, 73);
+  color: whitesmoke;
+  box-shadow: 5px 5px 10px #6f7364;
 }
 
 header img {
-    width: 195px;
-    height: 325px;
-  	margin-left: 40px;
-    margin-top: -180px;
+  width: 195px;
+  height: 325px;
+  margin-left: 40px;
+  margin-top: -180px;
 }
 
 footer {
-    font-size: medium;
+  font-size: medium;
 }
 
 @media screen and (max-width: 900px) {
-    h1 {             
-        flex-direction: column;
-        }
-    }
+  body {
+    flex-direction: column;
+    width: 400px;
+    float: left;
+  }
+
+header {
+  font-size: 2.8rem;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-top: 30px;
+}
+
+header img {
+  width: 195px;
+  height: 325px;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+}
