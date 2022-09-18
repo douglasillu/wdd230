@@ -1,45 +1,52 @@
-* {
-	margin:0;
-	padding:0;
-	box-sizing:border-box;
+/* WDD 230 - Assignment Portal CSS Template */
+
+* { margin: 0; box-sizing: border-box; } 
+
+body { 
+    font-size: 16px; 
+    line-height: 32px;
+    font-family: sans-serif;
+    color: blue;
 }
-body {
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	font-size: 18px;
+
+h1 {
+    font-size:2.8rem; 
+    color: white;
+	text-align: center;
+	margin-top: 50px;
 }
 
 h2 {
-	margin-bottom: .5rem;
+    font-size:1.5rem;
+    text-align: left;
+	color: purple;
+    border-bottom: 1px solid #bbb;
 }
-main {
-	border: 1px solid #bbb;
-	padding: 1rem;
-	background-color: #bed;
-	box-shadow: 0 0 20px rgba(0,0,0,.1);
+li {
+	 font-size:1.15rem;
+	 color: green;
+    text-align: left;
+}
+	
+
+header, main, footer {
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: auto;
 }
 
-p {
-	margin: 1rem;
-	border:1px solid rgba(0,0,0,.1);
-	padding: .5rem;
-	background-color:#eee;
-	font-size: smaller;
+header, footer, footer a {
+   
+    background-color: blue;
+    color: whitesmoke;
 }
 
-fieldset {
-	margin: 1.5rem;
-}
-span {
-	font-weight: 700;
-}
-#currentdate {
-	color: forestgreen;
+header img {
+    width: 195px;
+    height: 325px;
+  	margin-right: 120px;
 }
 
-.highlight {
-	color: navy;
+footer {
+    font-size: medium;
 }
