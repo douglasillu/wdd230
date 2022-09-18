@@ -7,8 +7,7 @@ body {
     line-height: 32px;
     font-family: sans-serif;
     color: blue;
-    box-shadow: 15px;
-}
+ }
 
 h1 {
     font-size:4.8rem; 
@@ -42,7 +41,7 @@ li {
 header, main, footer {
     margin: 1.25rem auto;
     padding: .5rem;
-    max-width: auto;
+   
 }
 
 header, footer, footer a {
