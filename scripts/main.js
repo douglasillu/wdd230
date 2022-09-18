@@ -1,21 +1,4 @@
-// Select the HTML element to manipulate
-const date1 = document.querySelector("#date1");
-// Try to complete the method with options
-try {
-	const options = {
-		weekday: "long",
-		day: "numeric",
-		month: "long",
-		year: "numeric"
-	};
-	date1.innerHTML = `Today is <span class="highlight">${new Date().toLocaleDateString("en-UK", options)}</span>!`;
-} catch (e) {
-	alert("Error with code or your browser does not support Locale");
-}
-
-// Long hand method ... building day and month names from built-in date methods.
-
-const daynames = [
+let daynames = [
 	"Sunday",
 	"Monday",
 	"Tuesday",
@@ -24,7 +7,7 @@ const daynames = [
 	"Friday",
 	"Saturday"
 ];
-const months = [
+let months = [
 	"January",
 	"February",
 	"March",
@@ -38,9 +21,25 @@ const months = [
 	"November",
 	"December"
 ];
-const d = new Date();
-const dayName = daynames[d.getDay()];
-const monthName = months[d.getMonth()];
-const year = d.getFullYear();
-const fulldate = `${dayName}, ${d.getDate()} ${monthName} ${year}`;
-document.querySelector("#date2").textContent = fulldate;
+
+let d = new Date();
+let dayName = daynames[d.getDay()];
+let monthName = months[d.getMonth()];
+let year = d.getFullYear();
+let fulldate = dayName + ", " + monthName + " " + d.getDate() + ", " + year;
+
+document.getElementById("currentdate").textContent = fulldate;
+
+
+try {
+	let options = {
+		weekday: "long",
+		day: "numeric",
+		month: "long",
+		year: "numeric"
+	};
+
+    document.getElementById("currentdate2").textContent = new Date().toLocaleDateString("en-US", options);
+} catch (e) {
+	alert("Error with code or your browser does not support Locale");
+}
