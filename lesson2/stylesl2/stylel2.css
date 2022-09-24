@@ -1,5 +1,9 @@
 /* WDD 230 - Assignment Portal CSS Template */
 
+
+@import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
+
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -8,7 +12,7 @@
   body {
     font-size: 16px;
     line-height: 32px;
-    font-family: sans-serif;
+    font-family: Philosopher;
     color: rgb(17, 17, 87);
     margin: 30px;
   }
