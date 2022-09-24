@@ -39,16 +39,12 @@ li {
   text-align: left;
 }
 
-header,
-main,
-footer {
+header,main, footer {
   margin: 1.25rem auto;
   padding: 0.5rem;
 }
 
-header,
-footer,
-footer a {
+header, footer, footer a {
   background-color: rgb(10, 10, 73);
   color: whitesmoke;
   box-shadow: 5px 5px 10px #6f7364;

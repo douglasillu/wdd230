@@ -12,3 +12,50 @@
     color: rgb(17, 17, 87);
     margin: 30px;
   }
+
+  h1 {
+    font-size: 4.8rem;
+    color: white;
+    text-align: center;
+    margin: 5.0rem auto ;
+  }
+
+  p {
+    font-size: 1.8rem;
+  }
+
+  header,main, footer {
+    margin: 1.25rem auto;
+    padding: 0.5rem;
+  }
+
+  header, footer, footer a {
+    background-color: rgb(10, 10, 73);
+    color: whitesmoke;
+    box-shadow: 5px 5px 10px #6f7364;
+  }
+
+  @media screen and (max-width: 900px) {
+    body {
+      flex-direction: column;
+      width: 400px;
+      float: left;
+    }
+  
+  header {
+    font-size: 1.2rem;
+    flex-direction: column;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+  }
+  
+  header img {
+    width: 195px;
+    height: 325px;
+    margin-left: 40px;
+    margin-top: 20px;
+  }
+  }
