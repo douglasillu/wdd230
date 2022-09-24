@@ -22,7 +22,7 @@ header,footer {
 }
 
 main {
-  justify-content: space-around;
+  justify-content: center;
   margin: 0 auto;
   align-items: center;
   display: grid;
