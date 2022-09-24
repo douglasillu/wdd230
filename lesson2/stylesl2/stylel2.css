@@ -1,61 +1,69 @@
 /* WDD 230 - Assignment Portal CSS Template */
 
+@import url("https://fonts.googleapis.com/css2?family=Philosopher&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
+body {
+  font-family: Philosopher;
+}
+
+header, main, footer {
+  max-width: 767px;
+  margin: 0 auto;
+}
+
+header,footer {
+  background-color: rgb(10, 10, 73);
+  color: whitesmoke;
+  box-shadow: 5px 5px 10px #6f7364;
+  text-align: center;
+  align-items: center;
+  margin:1rem auto;
+  padding: auto;
+}
+
+main {
+  justify-content: space-around;
+  margin: 0 auto;
+  align-items: center;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr;
+  padding: 2rem;
+  border: 2px;
+  border-color: #ad9e9e;
+}
+
+article {
+  background-color: #e7e4e4;
+  align-items: center;
+  padding: 2rem;
+  border-color: aliceblue;
+}
+
+li a:hover {
+  background-color: #ffcccc;
+}
+
+label {
+  display: inline-block;
+  min-width: 120px;
+  text-align: right;
+}
 
 
-* {
-    margin: 0;
-    box-sizing: border-box;
+@media only screen and (min-width: 37.5em) {
+  main {
+    grid-template-columns: 1fr 1fr;
   }
-  
-  body {
-    font-size: 16px;
-    line-height: 32px;
-    font-family: Philosopher;
-    color: rgb(17, 17, 87);
-    margin: 30px;
+  main article:nth-child(3) {
+    grid-column: span 2;
   }
-
-  h1 {
-    font-size: 4.8rem;
-    color: white;
-    text-align: center;
-    margin: 5.0rem auto ;
+}
+@media only screen and (min-width: 60em) {
+  main {
+    grid-template-columns: 1fr 1fr 1fr;
   }
-
-  p {
-    font-size: 1.8rem;
+  main article:nth-child(3) {
+    grid-column: span 1;
   }
-
-  header,main, footer {
-    margin: 1.25rem auto;
-    padding: 0.5rem;
-  }
-
-  header, footer, footer a {
-    background-color: rgb(10, 10, 73);
-    color: whitesmoke;
-    box-shadow: 5px 5px 10px #6f7364;
-  }
-
-  @media screen and (max-width: 900px) {
-    body {
-      flex-direction: column;
-      width: 400px;
-      }
-  
-  header {
-    font-size: 1.2rem;
-    flex-direction: column;
-  }
-  
-  h1 {
-    font-size: 1.8rem;
-   }
-
-  p {
-    font-size: 1.2rem;
-  }
-  
- }
+}
