@@ -39,8 +39,7 @@
     body {
       flex-direction: column;
       width: 400px;
-      float: left;
-    }
+      }
   
   header {
     font-size: 1.2rem;
@@ -49,13 +48,10 @@
   
   h1 {
     font-size: 1.8rem;
-    margin-top: 30px;
+   }
+
+  p {
+    font-size: 1.2rem;
   }
   
-  header img {
-    width: 195px;
-    height: 325px;
-    margin-left: 40px;
-    margin-top: 20px;
-  }
-  }
+ }
