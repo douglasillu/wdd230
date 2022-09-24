@@ -2,13 +2,15 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Philosopher&display=swap");
 
+
+
 body {
   font-family: Philosopher;
 }
 
 header, main, footer {
-  max-width: 767px;
-  margin: 0 auto;
+  margin: 1.25rem auto;
+  padding: 0.5rem;
 }
 
 header,footer {
@@ -24,7 +26,7 @@ header,footer {
 main {
   justify-content: center;
   margin: 0 auto;
-  align-items: center;
+  align-items: stretch;
   display: grid;
   gap: 10px;
   grid-template-columns: 1fr;
@@ -38,6 +40,14 @@ article {
   align-items: center;
   padding: 2rem;
   border-color: aliceblue;
+}
+
+
+h2 {
+  font-size: 1.25rem;
+  text-align: left;
+  color: rgb(97, 96, 97);
+  border-top: 1px solid #bbb;
 }
 
 li a:hover {
