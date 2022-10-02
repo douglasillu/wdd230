@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Alice&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antic&family=Overlock&family=Rubik:wght@300;600&display=swap');
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Antic';
     margin: 30px;
     background-color: #ccecfc;
   }
@@ -9,13 +9,19 @@ body {
 header, main, footer, nav {
     margin: 1.25rem auto;
     padding: 0.5rem;
+    font-size: 20px;
 }
 
+
 h1, h2, h3 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Antic';
+    font-size: 20px;
 }
+
+
 p {
-    font-family: 'Alice', serif;;
+    font-family: 'Overlock';
+    font-size: 20px;
 }
 
 header, footer {
@@ -34,7 +40,7 @@ header h1 {
     font-size: 3rem;
     color: #ffffff;
     text-align: center;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Rubik';
 }
 nav {
     background-color: #124d24;
@@ -53,7 +59,7 @@ nav ul li a{
     text-align: center;
     padding: 0.75rem;
     text-decoration: none;
-    font-size: large;   
+    font-size: 25px;   
 }
 main {
     display:grid;
