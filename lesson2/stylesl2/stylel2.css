@@ -15,8 +15,8 @@ header, main, footer {
 }
 
 header,footer {
-  background-color: rgb(10, 10, 73);
-  color: whitesmoke;
+  background-color: #0a0a49;
+  color: #f5f5f5;
   box-shadow: 5px 5px 10px #6f7364;
   text-align: center;
   align-items: center;
@@ -40,15 +40,15 @@ article {
   background-color: #e7e4e4;
   align-items: center;
   padding: 2rem;
-  border-color: aliceblue;
+  border-color: #f0f8ff;
 }
 
 
 h2 {
   font-size: 1.25rem;
   text-align: left;
-  color: rgb(97, 96, 97);
-  border-top: 1px solid #bbb;
+  color: #616061;
+  border-top: 1px solid #bbbbbb;
 }
 
 li a:hover {
@@ -59,6 +59,7 @@ label {
   display: inline-block;
   min-width: 120px;
   text-align: right;
+  
 }
 
 

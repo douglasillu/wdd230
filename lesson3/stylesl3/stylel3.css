@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Playfair+Display&display=swap');
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 30px;
+    background-color: #ccecfc;
+  }
+
+header, main, footer, nav {
+    margin: 1.25rem auto;
+    padding: 0.5rem;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+p {
+    font-family: 'Alice', serif;;
+}
+
+header, footer {
+    background-color: #0a0a49;
+    color: #f5f5f5;
+    box-shadow: 5px 5px 10px #6f7364;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #0000001a;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+nav {
+    background-color: #124d24;
+    margin: 1.25rem auto;
+    padding: 0.5rem;
+    text-align: center;
+    box-shadow: 5px 5px 10px #f7ad59;
+}
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+nav ul li a{ 
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 0.75rem;
+    text-decoration: none;
+    font-size: large;   
+}
+main {
+    display:grid;
+    grid-template-columns: 1fr;
+    font: size 0.8re;
+}
+main article{
+    margin: 1rem;
+    border: 1px solid #00000033;
+    padding: 1rem;
+    background-color: #f6f9fa;
+}
+main picture { 
+    display: flex;
+    margin: 1rem;
+}
+#primary {
+    background-color: #0a0a49;
+    color: #f5f5f5;
+}
+#secondary {
+    background-color: #124d24;
+    color: #f5f5f5;
+    }
+#accent-one{ 
+    background-color: #ccecfc;
+}
+#accent-two{ 
+    background-color: #f7ad59;
+    margin: 1rem;
+    border: 1px solid rgbs(0,0,0,0.2);}
+
+
+/*medum view */
+@media only screen and (min-width: 37.5em) {
+    h1{
+        font-size: 1.5rem;
+    }
+    nav ul {display:flex;}
+    nav ul li{ flex: 1 1 auto;}
+    nav a { font-size: 1rem;}
+    nav a:hover{ --d:75%;}
+    main{ grid-template-columns: 1fr 1fr;}
+    article:nth-child(3){ grid-column: span 2;}
+    main picture{ display: block;}
+    main picture img{ width: 100%;
+                    height: auto;
+                    border: 1px solid #bbb;}
+}
+/* max view*/
+@media only screen and ( min-width: 60em){
+    h1{ font-size: 2rem;}
+    nav a{ font-size: 1.1rem;}
+    main {grid-template-columns: 1fr 1fr 1fr;}
+    article:nth-child(3){grid-column: span 1;}
+}
